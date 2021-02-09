@@ -1,0 +1,9 @@
+StepsDefinitions\PostSteps.class
+TestUnitario\GetSteps.class
+Class\Usuario.class
+TestUnitario\PostSteps.class
+Json\CadastraUsuarioClass.class
+StepsDefinitions\GetSteps.class
+Runner\Runner.class
+StepsDefinitions\Steps.class
+Suporte\GeradorDeEmail.class

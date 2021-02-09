@@ -1,0 +1,23 @@
+
+// Unindo JsonPath com JAVA
+
+@Test
+    public void validarRetornoDoCampoName(){
+        idFinal = 1548;
+        ArrayList<String> names = (ArrayList<String>)
+
+         given()
+                .header("Authorization", "dc812aae71f795f80c6a69688bbdf64b73f108e9177a97ba1e2207e11cbc0496")
+                .body(idFinal)
+                .when()
+                .get("https://gorest.co.in/public-api/users/" + idFinal.toString())
+                .then()
+                .statusCode(200)
+                .extract()
+                .path("data.name.findAll{it.startsWith('Rafael')}");
+
+                 Assert.assertEquals(1, names.size());
+                 Assert.assertEquals(names.get(0), "Rafael");
+    }
+
+// Json com lista
