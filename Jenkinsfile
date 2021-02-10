@@ -1,10 +1,11 @@
 pipeline {
     agent any
-    stages {
+      stages {
         stage ('Executando Testes') {
-        bat 'mvn test'
+         steps {
+          bat 'mvn test'
           }
         }
+      }
     }
 
-        
